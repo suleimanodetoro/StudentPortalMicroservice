@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * This class is responsible for connect with account application
+ * This class is responsible for connect with finance application
  */
 @RestController
 @RequestMapping("/api")
