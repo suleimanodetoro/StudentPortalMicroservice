@@ -15,7 +15,7 @@ import java.util.Optional;
  * Spring Data JPA repository for the Invoice entity.
  */
 @SuppressWarnings("unused")
-@Repository
+//@Repository
 public interface InvoiceRepository extends JpaRepository<Invoice, Long> {
     List<Invoice> findAllByStudentInfo(StudentInfo studentInfo);
     List<Invoice> findAllByStudentInfoAndInvoiceFor(StudentInfo studentInfo, InvoiceFor invoiceFor);

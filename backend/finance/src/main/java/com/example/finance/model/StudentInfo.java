@@ -1,6 +1,7 @@
 package com.example.finance.model;
 import lombok.Data;
-import jakarta.persistence.*;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "student_info")

@@ -3,8 +3,9 @@ package com.example.finance.model;
 
 import com.example.finance.enumeration.InvoiceFor;
 import com.example.finance.enumeration.InvoiceType;
-import jakarta.persistence.*;
 import lombok.Data;
+
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**

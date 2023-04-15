@@ -7,6 +7,8 @@ import com.example.finance.model.StudentInfo;
 import com.example.finance.repository.InvoiceRepository;
 import com.example.finance.repository.StudentInfoRepository;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -20,12 +22,15 @@ import java.util.Optional;
 
 @Service
 @Transactional
-@AllArgsConstructor
+//@AllArgsConstructor
+@RequiredArgsConstructor
+
 public class InvoiceService {
 
     private final Logger log = LoggerFactory.getLogger(InvoiceService.class);
-    private final InvoiceRepository invoiceRepository;
     private final StudentInfoRepository studentInfoRepository;
+    private final InvoiceRepository invoiceRepository;
+
 
     /**
      * Create a invoice

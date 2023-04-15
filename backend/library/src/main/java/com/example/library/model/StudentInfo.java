@@ -3,7 +3,7 @@ package com.example.library.model;
 
 import lombok.Data;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "student_info")
