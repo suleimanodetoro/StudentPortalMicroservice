@@ -76,7 +76,7 @@ public class BookControllerTest {
     }
 
     @Test
-    public void testGetAllBooksByVolunteerId() throws Exception {
+    public void testGetAllBooksByStudentId() throws Exception {
         // Arrange
         Long studentId = 1L;
         List<Book> expectedBooks = Arrays.asList(
@@ -85,7 +85,7 @@ public class BookControllerTest {
         );
         when(bookService.findAllByStudentId(studentId)).thenReturn(expectedBooks);
         // Act
-        List<Book> actualBooks = bookResource.getAllBooksByVolunteerId(studentId);
+        List<Book> actualBooks = bookResource.getAllBooksByStudentId(studentId);
 
         assertEquals(expectedBooks, actualBooks);
     }

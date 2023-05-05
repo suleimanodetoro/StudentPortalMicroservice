@@ -51,14 +51,14 @@ public class BookResource {
     }
 
     /**
-     * get all book by volunteer ID
-     * @param volunteerId
+     * get all books by student ID
+     * @param studentId
      * @return  list of book
      */
     @GetMapping("/books-by-student")
-    public List<Book> getAllBooksByVolunteerId(@RequestParam("studentId") Long volunteerId) {
+    public List<Book> getAllBooksByStudentId(@RequestParam("studentId") Long studentId) {
         log.debug("REST request to get all Books");
-        return bookService.findAllByStudentId(volunteerId);
+        return bookService.findAllByStudentId(studentId);
     }
 
     /**
