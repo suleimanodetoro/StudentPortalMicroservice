@@ -2,7 +2,9 @@ package com.example.library.model;
 
 import com.example.library.enumeration.BookStatus;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -10,6 +12,8 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "book")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Book {
 
     @Id

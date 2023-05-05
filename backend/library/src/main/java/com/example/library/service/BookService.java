@@ -27,6 +27,11 @@ public class BookService {
     private final BookRepository bookRepository;
     private final StudentInfoRepository studentInfoRepository;
 
+    public Book saveBook(Book book) {
+        log.debug("Request to save Book : {}", book);
+        return bookRepository.save(book);
+    }
+
     public Book save(Book book) {
         StudentInfo studentInfo = null;
         if (book.getStudentInfo() != null && book.getStudentInfo().getStudentId() != null){

@@ -12,18 +12,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/library")
 @AllArgsConstructor
-public class StudentInfoResource {
+public class VolunteerInfoResource {
 
     @Autowired
     private StudentInfoService studentInfoService;
 
     /**
-     * register student on library server
-     * @param studentId
+     * register volunter on library server
+     * @param volunteerId
      * @return boolean
      */
-    @PostMapping("/register/{studentId}")
-    public ResponseEntity<Boolean> registerStudent(@PathVariable Long studentId){
-        return ResponseEntity.ok(studentInfoService.registerStudent(studentId));
+    @PostMapping("/register/{volunteerId}")
+    public ResponseEntity<Boolean> registerVolunteer(@PathVariable Long volunteerId){
+        return ResponseEntity.ok(studentInfoService.registerStudent(volunteerId));
     }
 }
